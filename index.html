@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Updater</title>
+</head>
+<body>
+
+    <h1>Update Paragraph</h1>
+
+    <p id="myParagraph">This text will change</p>
+
+    <input type="text" id="myInput">
+    <button id="myButton">Change Text</button>
+
+    <script>
+        const btn = document.querySelector('#myButton');
+
+        btn.onclick = function() {
+            const field = document.querySelector('#myInput');
+            const para = document.querySelector('#myParagraph');
+            para.textContent = field.value;
+        };
+    </script>
+
+</body>
+</html>
